@@ -19,7 +19,7 @@ namespace GestorArchivo
                     if (!File.Exists(@ruta + "/" + nombre + ".txt"))
                     {
                         fs = File.Create(@ruta + "/" + nombre + ".txt");
-                        fs.Close();
+                        
                         Console.WriteLine("Archivo Creado Correctamente. Ruta: " + ruta + "/" + nombre + ".txt");
                     }
                     else
@@ -87,7 +87,7 @@ namespace GestorArchivo
             }
         }
 
-        public void readFile(string nombre)
+        public void writeFile(string nombre)
         {
             bool exit = false;
             StreamReader sr;

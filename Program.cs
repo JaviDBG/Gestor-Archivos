@@ -78,7 +78,7 @@ namespace GestorArchivo
                             }
                             else
                             {
-                                file.readFile(lista[flag]);
+                                file.writeFile(lista[flag]);
                                 exit2 = true;
                             }
                         }
